@@ -631,14 +631,6 @@
             Каждое путешествие — это глубоко закрытая медицинская и духовная программа для узкого круга (до 10–12 человек).
           </p>
         </div>
-
-        <!-- Переключатель валют -->
-        <div class="inline-flex items-center p-1.5 rounded-full bg-white border border-sacred-sand-deep shadow-sm">
-          <span class="text-xs font-bold text-sacred-smoke px-3">Валюта:</span>
-          <button onclick="changeCurrency('USD')" id="currUSD" class="px-3 py-1 rounded-full text-xs font-bold bg-sacred-pine-dark text-white">USD ($)</button>
-          <button onclick="changeCurrency('EUR')" id="currEUR" class="px-3 py-1 rounded-full text-xs font-bold text-sacred-pine-dark hover:bg-sacred-sand-light">EUR (€)</button>
-          <button onclick="changeCurrency('RUB')" id="currRUB" class="px-3 py-1 rounded-full text-xs font-bold text-sacred-pine-dark hover:bg-sacred-sand-light">RUB (₽)</button>
-        </div>
       </div>
 
       <!-- Карточки ретритов -->
@@ -693,11 +685,11 @@
 
             <div class="pt-6 border-t border-sacred-sand-deep flex items-center justify-between">
               <div>
-                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Стоимость тура</span>
-                <span class="font-serif-sacred text-2xl font-bold text-sacred-pine-darkest price-val" data-usd="2400" data-eur="2250" data-rub="235000">2 400 $</span>
+                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Формат участия</span>
+                <span class="font-serif-sacred text-lg font-bold text-sacred-pine-darkest">По личному запросу</span>
               </div>
               <button onclick="openBookingModal('Непал: Священные Гималаи (12 дней)')" class="px-5 py-2.5 rounded-full bg-sacred-pine-dark hover:bg-sacred-terracotta text-white text-xs font-bold uppercase tracking-wider transition-colors">
-                Подать заявку
+                Узнать стоимость
               </button>
             </div>
 
@@ -757,11 +749,11 @@
 
             <div class="pt-6 border-t border-sacred-sand-deep flex items-center justify-between">
               <div>
-                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Стоимость тура</span>
-                <span class="font-serif-sacred text-2xl font-bold text-sacred-pine-darkest price-val" data-usd="2150" data-eur="1990" data-rub="210000">2 150 $</span>
+                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Формат участия</span>
+                <span class="font-serif-sacred text-lg font-bold text-sacred-pine-darkest">По личному запросу</span>
               </div>
               <button onclick="openBookingModal('Индия: Истоки Ганга и Ришикеш (10 дней)')" class="px-5 py-2.5 rounded-full bg-sacred-terracotta hover:bg-sacred-terracotta-bright text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-md">
-                Подать заявку
+                Узнать стоимость
               </button>
             </div>
 
@@ -817,11 +809,11 @@
 
             <div class="pt-6 border-t border-sacred-sand-deep flex items-center justify-between">
               <div>
-                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Стоимость тура</span>
-                <span class="font-serif-sacred text-2xl font-bold text-sacred-pine-darkest price-val" data-usd="2800" data-eur="2600" data-rub="275000">2 800 $</span>
+                <span class="text-[10px] uppercase tracking-widest text-sacred-smoke block">Формат участия</span>
+                <span class="font-serif-sacred text-lg font-bold text-sacred-pine-darkest">По личному запросу</span>
               </div>
               <button onclick="openBookingModal('Керала: Панчакарма и Марма-терапия (14 дней)')" class="px-5 py-2.5 rounded-full bg-sacred-pine-dark hover:bg-sacred-terracotta text-white text-xs font-bold uppercase tracking-wider transition-colors">
-                Подать заявку
+                Узнать стоимость
               </button>
             </div>
 
@@ -1410,31 +1402,7 @@
       closeBookingModal();
     }
 
-    // Переключатель валют
-    function changeCurrency(curr) {
-      const prices = document.querySelectorAll('.price-val');
-      const bUSD = document.getElementById('currUSD');
-      const bEUR = document.getElementById('currEUR');
-      const bRUB = document.getElementById('currRUB');
-
-      // Сброс активных кнопок
-      [bUSD, bEUR, bRUB].forEach(btn => {
-        btn.className = 'px-3 py-1 rounded-full text-xs font-bold text-sacred-pine-dark hover:bg-sacred-sand-light';
-      });
-
-      if (curr === 'USD') {
-        bUSD.className = 'px-3 py-1 rounded-full text-xs font-bold bg-sacred-pine-dark text-white';
-        prices.forEach(p => p.textContent = Number(p.dataset.usd).toLocaleString('ru-RU') + ' $');
-      } else if (curr === 'EUR') {
-        bEUR.className = 'px-3 py-1 rounded-full text-xs font-bold bg-sacred-pine-dark text-white';
-        prices.forEach(p => p.textContent = Number(p.dataset.eur).toLocaleString('ru-RU') + ' €');
-      } else if (curr === 'RUB') {
-        bRUB.className = 'px-3 py-1 rounded-full text-xs font-bold bg-sacred-pine-dark text-white';
-        prices.forEach(p => p.textContent = Number(p.dataset.rub).toLocaleString('ru-RU') + ' ₽');
-      }
-    }
-
-    // Синтезатор сакрального звука поющей чаши (Web Audio API — частота 174 Гц)
+// Синтезатор сакрального звука поющей чаши (Web Audio API — частота 174 Гц)
     let audioCtx = null;
     let isSoundPlaying = false;
     let osc1 = null;
