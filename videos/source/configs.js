@@ -1,11 +1,11 @@
 const TH={
- dawn:{bg:['#FBF3E8','#F0DFCB'],ink:'#2E2A25',accent:'#A8674A',muted:'rgba(46,42,37,.5)',track:'rgba(46,42,37,.12)',chipBg:'#2E2A25',chipInk:'#FBF8F3',onAccent:'#FBF8F3',
-  blobs:[{c:'rgba(232,160,120,.55)',y:520,r:620,ax:260,ay:120,sp:.35},{c:'rgba(111,124,99,.30)',y:1450,r:700,ax:300,ay:160,sp:.25},{c:'rgba(240,190,120,.45)',y:950,r:520,ax:340,ay:200,sp:.3}]},
- night:{bg:['#1C1A29','#2E2A25'],ink:'#F6EFE4',accent:'#E2B27C',muted:'rgba(246,239,228,.5)',track:'rgba(255,255,255,.14)',chipBg:'rgba(246,239,228,.13)',chipInk:'#F6EFE4',onAccent:'#2E2A25',
-  blobs:[{c:'rgba(96,84,170,.55)',y:500,r:680,ax:280,ay:140,sp:.28},{c:'rgba(200,140,80,.26)',y:1350,r:640,ax:320,ay:160,sp:.22},{c:'rgba(150,80,120,.32)',y:950,r:560,ax:360,ay:220,sp:.32}]},
+ dawn:{bg:['#F7F2E8','#E9E1D0'],ink:'#1E3B32',accent:'#A8674A',muted:'rgba(30,59,50,.55)',track:'rgba(30,59,50,.14)',chipBg:'#1E3B32',chipInk:'#FBF8F3',onAccent:'#FBF8F3',
+  blobs:[{c:'rgba(232,160,120,.55)',y:520,r:620,ax:260,ay:120,sp:.35},{c:'rgba(60,110,90,.30)',y:1450,r:700,ax:300,ay:160,sp:.25},{c:'rgba(240,190,120,.45)',y:950,r:520,ax:340,ay:200,sp:.3}]},
+ night:{bg:['#17302A','#10231E'],ink:'#F4EFE6',accent:'#D9B77E',muted:'rgba(244,239,230,.5)',track:'rgba(255,255,255,.14)',chipBg:'rgba(244,239,230,.12)',chipInk:'#F4EFE6',onAccent:'#17302A',
+  blobs:[{c:'rgba(60,110,90,.55)',y:500,r:680,ax:280,ay:140,sp:.28},{c:'rgba(217,183,126,.22)',y:1350,r:640,ax:320,ay:160,sp:.22},{c:'rgba(40,80,95,.40)',y:950,r:560,ax:360,ay:220,sp:.32}]},
  ginger:{bg:['#F8E8D2','#EDC79C'],ink:'#3A2A1E',accent:'#B0532A',muted:'rgba(58,42,30,.5)',track:'rgba(58,42,30,.13)',chipBg:'#3A2A1E',chipInk:'#FBF3E8',onAccent:'#FBF3E8',
   blobs:[{c:'rgba(235,140,60,.50)',y:540,r:640,ax:260,ay:140,sp:.33},{c:'rgba(250,212,110,.55)',y:1300,r:680,ax:320,ay:160,sp:.24},{c:'rgba(168,103,74,.35)',y:900,r:520,ax:360,ay:200,sp:.3}]},
- noon:{bg:['#FFF6E2','#F2DFBC'],ink:'#2E2A25',accent:'#BF7429',muted:'rgba(46,42,37,.5)',track:'rgba(46,42,37,.12)',chipBg:'#2E2A25',chipInk:'#FFF6E2',onAccent:'#FFF6E2',
+ noon:{bg:['#FBF4E4','#EFE3C6'],ink:'#1E3B32',accent:'#BF7429',muted:'rgba(30,59,50,.55)',track:'rgba(30,59,50,.14)',chipBg:'#1E3B32',chipInk:'#FFF6E2',onAccent:'#FFF6E2',
   blobs:[{c:'rgba(255,196,80,.60)',y:430,r:640,ax:240,ay:100,sp:.3},{c:'rgba(150,185,195,.30)',y:1400,r:700,ax:320,ay:160,sp:.22},{c:'rgba(226,170,120,.40)',y:950,r:540,ax:360,ay:200,sp:.28}]},
 };
 module.exports={
